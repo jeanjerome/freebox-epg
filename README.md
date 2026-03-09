@@ -72,6 +72,10 @@ L'application est accessible sur `http://localhost:5173`. Le serveur de dévelop
 | `npm run preview` | Prévisualisation du build |
 | `npm run lint` | Vérification ESLint |
 
+## Cache
+
+Les réponses de l'API Freebox et des services de notes (TMDb, OMDb) sont mises en cache dans le `localStorage` du navigateur pendant **24 heures**. L'objectif principal est de **limiter la consommation des quotas journaliers** des clés API TMDb et OMDb : les données d'un programme déjà consulté sont réutilisées sans nouvel appel réseau. Les entrées expirées sont automatiquement purgées au démarrage de l'application.
+
 ## Stack technique
 
 - [React](https://react.dev/) 19

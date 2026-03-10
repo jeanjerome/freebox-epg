@@ -76,6 +76,20 @@ L'application est accessible sur `http://localhost:5173`. Le serveur de dévelop
 
 Les réponses de l'API Freebox et des services de notes (TMDb, OMDb) sont mises en cache dans le `localStorage` du navigateur pendant **24 heures**. L'objectif principal est de **limiter la consommation des quotas journaliers** des clés API TMDb et OMDb : les données d'un programme déjà consulté sont réutilisées sans nouvel appel réseau. Les entrées expirées sont automatiquement purgées au démarrage de l'application.
 
+## Captures d'écran
+
+**Grille des programmes**
+
+![Grille des programmes](public/capture-timeline@3x.jpg)
+
+**Fiche émission**
+
+![Fiche émission](public/capture-emission@3x.jpg)
+
+**Fiche film**
+
+![Fiche film](public/capture-film@3x.jpg)
+
 ## Stack technique
 
 - [React](https://react.dev/) 19
